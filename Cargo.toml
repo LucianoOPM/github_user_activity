@@ -3,4 +3,13 @@ name = "github_user_activity"
 version = "0.1.0"
 edition = "2021"
 
+[profile.release]
+panic = "abort"
+
+[profile.dev]
+panic = "abort"
+
 [dependencies]
+serde = "1.0.217"
+serde_derive = "1.0.217"
+serde_json = "1.0.137"
